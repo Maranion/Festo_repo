@@ -1,0 +1,4 @@
+If you’ve never seen C before, this chapter will give you a decent
+background in the style of C used in C++. If you are familiar with
+the style of C described in the first edition of Kernighan & Ritchie
+(often called K&R C), you will find some new and different features
