@@ -1,0 +1,4 @@
+Since C++ is based on C, you must be familiar with the
+syntax of C in order to program in C++, just as you
+must be reasonably fluent in algebra in order to tackle
+calculus.

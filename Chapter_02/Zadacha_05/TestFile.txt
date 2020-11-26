@@ -1,0 +1,4 @@
+Much of this program is similar to the previous one; a file is opened
+and lines are read into string objects one at a time. However, these
+string objects are pushed onto the back of the vector v. Once the
+while loop completes, the entire file is resident in memory, inside
