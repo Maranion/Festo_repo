@@ -10,14 +10,14 @@
 using namespace std;
 
 int main() {
-	cout << " ??= " << endl;
-	cout << " \??/ " << endl;
-	cout << " ??' " << endl;
-	cout << " ??( " << endl;
-	cout << " ??) " << endl;
-	cout << " ??! " << endl;
-	cout << " ??< " << endl;
-	cout << " ??> " << endl;
-	cout << " ??- " << endl;
-	return 0;
+    cout << " ??= " << endl;
+    cout << " \??/ " << endl;
+    cout << " ??' " << endl;
+    cout << " ??( " << endl;
+    cout << " ??) " << endl;
+    cout << " ??! " << endl;
+    cout << " ??< " << endl;
+    cout << " ??> " << endl;
+    cout << " ??- " << endl;
+    return 0;
 }
