@@ -12,7 +12,7 @@ using namespace std;
 #define PRINT(EXP)\
 cout << #EXP << ":" << (long)&EXP << endl;\
 
-	int main() {
+    int main() {
 
  char ch1,ch2,ch3;
  short int shortInt1,shortInt2,shortInt3;
@@ -50,5 +50,5 @@ cout << #EXP << ":" << (long)&EXP << endl;\
  PRINT(longDouble2);
  PRINT(longDouble3);
 
-	return 0;
+    return 0;
 }
