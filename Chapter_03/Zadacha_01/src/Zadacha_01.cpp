@@ -23,6 +23,6 @@ int main() {
   int_Func(intVar);
   cout << endl ;
   float_Func(floatVar);
-	return 0;
+    return 0;
 }
 
