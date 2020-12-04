@@ -23,5 +23,5 @@ int main() {
  PRINT(x + y - 2/2 + z);
  PRINT(x + (y - 2) / (2 + z));
 
-	return 0;
+    return 0;
 }
