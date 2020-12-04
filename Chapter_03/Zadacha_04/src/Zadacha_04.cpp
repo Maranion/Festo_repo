@@ -10,57 +10,57 @@
 using namespace std;
 
 int main() {
-	char input;
-	bool quit = false;
+    char input;
+    bool quit = false;
 
-	while(true){
-		cout << "Main Menu" << endl ;
-		cout << "l: left, r: right, q: quit ->" << endl ;
-		cin >> input;
+    while(true){
+        cout << "Main Menu" << endl ;
+        cout << "l: left, r: right, q: quit ->" << endl ;
+        cin >> input;
 
-		switch(input){
-		case 'l':
-			cout  << "Left Menu" << endl;
-			cout << "select a or b:" << endl;
-			cin >> input;
-			switch(input){
-			case 'a':
-				cout << "you chose a"<< endl;;
-				break;
-			case 'b':
-				cout << "you chose b"<<  endl;
-				break;
-			default:
-				cout << "You did't chose a or b" << endl;
-			}
-			break;
+        switch(input){
+        case 'l':
+            cout  << "Left Menu" << endl;
+            cout << "select a or b:" << endl;
+            cin >> input;
+            switch(input){
+            case 'a':
+                cout << "you chose a"<< endl;;
+                break;
+            case 'b':
+                cout << "you chose b"<<  endl;
+                break;
+            default:
+                cout << "You did't chose a or b" << endl;
+            }
+            break;
 
 
-		case 'r':
-			cout  << "Right Menu" << endl;
-			cout << "select c or d:" << endl;
-			cin >> input;
-			switch(input){
-			case 'c':
-			cout << "you chose c"<< endl;;
-		    break;
-			case 'd':
-			cout << "you chose d"<<  endl;
-			break;
-		    default:
-			cout << "You did't chose c or d" << endl;
-			}
-			break;
+        case 'r':
+            cout  << "Right Menu" << endl;
+            cout << "select c or d:" << endl;
+            cin >> input;
+            switch(input){
+            case 'c':
+            cout << "you chose c"<< endl;;
+            break;
+            case 'd':
+            cout << "you chose d"<<  endl;
+            break;
+            default:
+            cout << "You did't chose c or d" << endl;
+            }
+            break;
 
-		case'q':
-			quit = true;
-			break;
-		default:
-			cout << "You did't chose a correct option" << endl;
-		}
-		if(quit){
-			break;
-		}
-	}
-	return 0;
+        case'q':
+            quit = true;
+            break;
+        default:
+            cout << "You did't chose a correct option" << endl;
+        }
+        if(quit){
+            break;
+        }
+    }
+    return 0;
 }
