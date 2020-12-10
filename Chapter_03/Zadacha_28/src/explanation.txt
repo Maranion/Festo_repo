@@ -1,0 +1,3 @@
+tuk settvame vseki byte ot double na 1,tova ne ozna4ava 4e 
+double = 1.0  zashtoto double ima 8 byte i nie polu4avame
+1111111 koeto se polu4ava 4islo razli4no ot 1.0
