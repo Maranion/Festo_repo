@@ -9,12 +9,12 @@
 #include <iostream>
 using namespace std;
 
-#define PRINT(ARR,SIZE) \
-	cout << #ARR << "["; \
-	for(int i=0;i<SIZE;i++){ \
-		cout << ARR[i];\
-}\
-cout << "]" << endl;\
+#define PRINT(ARR,SIZE)				\
+	cout << #ARR << "[";			\
+	for(int i=0;i<SIZE;i++){		\
+		cout << ARR[i];				\
+}									\
+cout << "]" << endl;				\
 
 
 void byte(void *vptr,int range,int value){
@@ -32,17 +32,17 @@ void byte(void *vptr,int range,int value){
 int main() {
 
 
-	 int SIZE = 6;
-     int val = 7;
+	int SIZE = 6;
+	int val = 7;
 
 
 	int arr[SIZE]{0};
 	PRINT(arr,SIZE);
 
-    void *pArr = static_cast<void*>(arr);
-    byte(pArr,SIZE,val);
+	void *pArr = static_cast<void*>(arr);
+	byte(pArr,SIZE,val);
 
-    PRINT(arr,SIZE);
+	PRINT(arr,SIZE);
 
 
 	return 0;
