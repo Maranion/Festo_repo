@@ -12,17 +12,18 @@
 using namespace std;
 
 int main() {
-  int intVar=0;
-  char chVar=' ';
-  float floatVar=0.0;
+	int intVar=5;
+	char chVar='A';
+	float floatVar=3.14;
+	string str = "hi";
 
-  void_Func();
-  cout << endl ;
-  ch_Func(chVar);
-  cout << endl ;
-  int_Func(intVar);
-  cout << endl ;
-  float_Func(floatVar);
-    return 0;
+	void_Func(str);
+
+	cout <<   ch_Func(chVar) << endl ;
+
+	cout << int_Func(intVar) << endl ;
+
+	cout <<  float_Func(floatVar) << endl ;
+
+	return 0;
 }
-
