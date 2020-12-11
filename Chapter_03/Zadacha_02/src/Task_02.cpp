@@ -9,20 +9,27 @@
 #include <iostream>
 using namespace std;
 
-int main() {
 
-    bool primeCheck;
-    for (int i = 2; i <=120; i++) {
-   primeCheck = true;
-        for (int j = 2; j <= i / 2; ++j) {
-            if (i % j == 0) {
-                primeCheck = false;
-                break;
-            }
-        }
-        if (primeCheck)
-            cout << i << " ";
-    }
+int main() {
+	int RANGE = 120;
+	bool primeCheck;
+	
+	for (int i = 2; i <= RANGE; i++) {
+		
+		primeCheck = true;
+
+		for (int j = 2; j <= i / 2; ++j) {
+			if (i % j == 0) {
+				primeCheck = false;
+				break;
+			}
+		}
+
+		if (primeCheck){
+			cout << i << " ";
+		}
+			
+	}
 
 	return 0;
 }
