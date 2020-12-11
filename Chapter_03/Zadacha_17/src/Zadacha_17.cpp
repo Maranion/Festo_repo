@@ -11,30 +11,30 @@
 
 union Packed
 {
-    char i;
-    short j;
-    int k;
-    long l;
-    float f;
-    double d;
+	char i;
+	short j;
+	int k;
+	long l;
+	float f;
+	double d;
 };
 
 int main()
 {
-    cout << "sizeof(Packed) = "
-              << sizeof(Packed) << std::endl;
+	cout << "sizeof(Packed) = "
+	<< sizeof(Packed) << endl;
 
-    Packed packed;
+	Packed packed;
 
-    std::cout << "Asigning value to short" << std::endl;
-    packed.j = 42;
+	cout << "Asigning value to short" << endl;
+	packed.j = 42;
 
-    std::cout << "Printing via int: " << packed.i << std::endl;
+	cout << "Printing via int: " << packed.i << endl;
 
-    std::cout << "Asigning value to float" << std::endl;
-    packed.f = 6.63;
+	cout << "Asigning value to float" <<endl;
+	packed.f = 6.63;
 
-    std::cout << "Printing via int: " << packed.i << std::endl;
+	cout << "Printing via int: " << packed.i << endl;
 
-    return 0;
+	return 0;
 }
