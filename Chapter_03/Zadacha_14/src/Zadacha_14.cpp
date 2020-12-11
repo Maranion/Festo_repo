@@ -11,21 +11,21 @@ using namespace std;
 
 int main()
 {
-    int i;
-    std::cout << "type a number and 'Enter'" << std::endl;
-    std::cin >> i;
+	int i;
+	cout << "type a number and 'Enter'" << std::endl;
+	cin >> i;
 
-    (i > 5) ? std::cout << "It's greater than 5" << std::endl :
-    (i < 5) ? std::cout << "It's less than 5 " << std::endl :
-    std::cout << "It's equal to 5 " << std::endl;
+	(i > 5) ? cout << "It's greater than 5" << endl :
+	(i < 5) ? cout << "It's less than 5 " << endl :
+	cout << "It's equal to 5 " << endl;
 
-    std::cout << "type a number and 'Enter'" << std::endl;
-    std::cin >> i;
+	cout << "type a number and 'Enter'" << endl;
+	cin >> i;
 
-    (i < 10) ?
-    (i > 5) ? std::cout << "5 < i < 10" << std::endl :
-    std::cout << "i <= 5" << std::endl :
-    std::cout << "i >= 10" << std::endl;
+	(i < 10) ?
+	(i > 5) ? cout << "5 < i < 10" << endl :
+	cout << "i <= 5" << endl :
+	cout << "i >= 10" << endl;
 
-    return 0;
+	return 0;
 }
