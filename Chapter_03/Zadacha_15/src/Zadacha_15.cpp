@@ -19,23 +19,23 @@ using namespace std;
 
 int main() {
 
-MyStruct myStruct;
-myStruct.str1 = "string 1";
-myStruct.str2 = "string 2";
-myStruct.n = 10;
+	MyStruct myStruct;
+	myStruct.str1 = "string 1";
+	myStruct.str2 = "string 2";
+	myStruct.n = 10;
 
-PRINT(myStruct.str1);
-PRINT(myStruct.str2);
-PRINT(myStruct.n);
+	PRINT(myStruct.str1);
+	PRINT(myStruct.str2);
+	PRINT(myStruct.n);
 
-MyStruct* pMyStruct = &myStruct;
-pMyStruct->str1 = "string 1 is different";
-pMyStruct->str2 = "string 2 is different";
-pMyStruct->n = 1220;
+	MyStruct* pMyStruct = &myStruct;
+	pMyStruct->str1 = "string 1 is different";
+	pMyStruct->str2 = "string 2 is different";
+	pMyStruct->n = 1220;
 
-PRINT(pMyStruct->str1);
-PRINT(pMyStruct->str2);
-PRINT(pMyStruct->n);
+	PRINT(pMyStruct->str1);
+	PRINT(pMyStruct->str2);
+	PRINT(pMyStruct->n);
 
 	return 0;
 }
