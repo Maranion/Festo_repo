@@ -13,18 +13,16 @@ using namespace std;
 
 int main() {
 
-	char ch;
+	string str;
 	int cnt=0;
 	fstream f;
 	f.open("TestFile.txt");
 
-	while(!f.eof()){
-		f.get(ch);
-		if(ch == ' '){
+	while(f >> str){
 			cnt++;
-		}
 	}
-	cout << "whitespaces:" << cnt;
+
+	cout << "words:" << cnt;
 
 	return 0;
 }
