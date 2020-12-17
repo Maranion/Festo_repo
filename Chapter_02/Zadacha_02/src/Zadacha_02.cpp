@@ -10,13 +10,13 @@
 using namespace std;
 
 int main() {
-     double radius=0,area=0;
+
+	double radius=0;
+
 	cout << "enter  circle radius" << endl;
 	cin >> radius;
-	area =  (radius*radius)*3.14;
-	cout << "area:" << area;
-
-
+	cout << "area:" << (radius*radius)*3.14;
 
 	return 0;
 }
+
