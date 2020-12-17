@@ -14,13 +14,12 @@ int main() {
 		vect.push_back((float(rand())/float((RAND_MAX)) * a));
 		cout << vect.at(i) << "|";
 		vect.at(i)*=vect.at(i);
-		}
+	}
 	
 	cout << endl;
 	for(int i=0;i<25;i++){
 		cout <<vect.at(i) << "|";
-		}
-	
+	}
 	
 	return 0;
 }
