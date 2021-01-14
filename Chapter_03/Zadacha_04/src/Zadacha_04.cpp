@@ -10,6 +10,7 @@
 using namespace std;
 
 int main() {
+	
 	char input;
 	bool quit = false;
 
@@ -20,35 +21,34 @@ int main() {
 		cin >> input;
 
 		switch(input){
+			
 			case 'l':
-
 				cout  << "Left Menu" << endl;
 				cout << "select a or b:" << endl;
 				cin >> input;
 
 				switch(input){
-
+					
 					case 'a':
 						cout << "you chose a"<< endl;;
-						break;
+					break;
 
 					case 'b':
 						cout << "you chose b"<<  endl;
-						break;
+					break;
 
 					default:
 						cout << "You did not chose a or b" << endl;
 				}
             break;
 
-
 			case 'r':
-
 				cout  << "Right Menu" << endl;
 				cout << "select c or d:" << endl;
 				cin >> input;
 
 				switch(input){
+					
 					case 'c':
 						cout << "you chose c"<< endl;;
 					break;
@@ -60,20 +60,21 @@ int main() {
 					default:
 						cout << "You did not chose c or d" << endl;
 				}
-				break;
+			break;
 
 			case 'q':
 				quit = true;
-				break;
+			break;
+
 			default:
 				cout << "You did not chose a correct option" << endl;
 		}
  
 		if(quit){
-            break;
-        }
+			break;
+		}
 		
-    }
+	}
 
 	return 0;
 }
