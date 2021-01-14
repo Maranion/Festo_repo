@@ -1,23 +1,20 @@
 //============================================================================
-// Name        : Zadacha_32.cpp
+// Name        : Zadacha_04.cpp
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
-
+#include "struct_.h"
 #include <iostream>
+
 using namespace std;
 
-int func(double n){
-	return n*2;
-}
-
 int main() {
-	
-	int (*ptr)(double) = func;
 
-	cout << (*ptr)(3.14);
+	pi pi_;
+
+	pi_.print_pi();
 
 	return 0;
 }

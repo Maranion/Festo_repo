@@ -29,7 +29,5 @@ int main() {
 		cout << colorNames[i] << " == " << colors[i] << endl;
 	}
 
-
-
 	return 0;
 }
