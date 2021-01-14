@@ -1,32 +1,22 @@
 /*
- * head.h
+ * header.h
  *
- *  Created on: 20.11.2020 ï¿½.
+ *  Created on: 14.01.2021 ã.
  *      Author: ivan
  */
 #include<iostream>
+
 using namespace std;
 
 #ifndef HEAD_H_
 #define HEAD_H_
 
-void void_Func(string str){
-	cout << "function name is: void void_Func(string str) "  << endl << "return: "<<  str << endl;
-}
+void void_Func(string str);
 
-char ch_Func(char chVar){
-	cout << "function name is: char ch_Func(char chVar)"<< endl;
-	return chVar;
-}
+char ch_Func(char chVar);
 
-int int_Func(int intVar){
-	cout << "function name is: int int_Func(int intVar)"<< endl;
-	return intVar*2;
-}
+int int_Func(int intVar);
 
-float float_Func(float floatVar){
-	cout << "function name is: float float_Func(float floatVar)"<< endl;
-	return floatVar;
-}
+float float_Func(float floatVar);
 
 #endif /* HEAD_H_ */

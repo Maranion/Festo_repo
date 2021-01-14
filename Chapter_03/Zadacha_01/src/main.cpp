@@ -1,14 +1,13 @@
 //============================================================================
-// Name        : Zadacha_01.cpp
+// Name        : Zadacha_03.cpp
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
-
+#include "head.h"
 #include <iostream>
 
-#include "head.h"
 using namespace std;
 
 int main() {
