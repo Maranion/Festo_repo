@@ -11,7 +11,8 @@ using namespace std;
 
 
 int main() {
-	int RANGE = 120;
+	
+	const int RANGE = 120;
 	bool primeCheck;
 	
 	for (int i = 2; i <= RANGE; i++) {
