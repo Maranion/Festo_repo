@@ -19,10 +19,8 @@ int main() {
 
 	int x=1,y=2,z=3;
 
-
-
- 	PRINT(x + y - 2/2 + z);
- 	PRINT(x + (y - 2) / (2 + z));
+	PRINT(x + y - 2/2 + z);
+	PRINT(x + (y - 2) / (2 + z));
 
 	return 0;
 }
