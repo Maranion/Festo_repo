@@ -15,13 +15,14 @@ int main() {
 
 	string str;
 	int cnt=0;
-	fstream f;
+	fstream f; 
+	
 	f.open("TestFile.txt");
 
 	while(f >> str){
-			cnt++;
+		cnt++;
 	}
-
+	
 	cout << "words:" << cnt;
 
 	return 0;
