@@ -10,12 +10,12 @@
 #include <string>
 using namespace std;
 
-#define SIZE 5
-#define PRINT_ARR(ARR)\
-	for(int i=0;i<SIZE;i++)\
-{\
- cout << ARR[i] << endl;\
-}\
+const int SIZE = 5;
+
+#define PRINT_ARR(ARR)			\
+for(int i=0;i<SIZE;i++) {		\
+ 	cout << ARR[i] << endl;		\
+}								\
 
 
 int main() {
@@ -26,8 +26,8 @@ int main() {
 	arr[2] = "three";
 	arr[3] = "four";
 	arr[4] = "five";
-	PRINT_ARR(arr);
 
+	PRINT_ARR(arr);
 
 	return 0;
 }
