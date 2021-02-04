@@ -37,6 +37,16 @@ void* Stack::pop() {
 
 void Stack::cleanup() {
 	if(head != 0) {
-		std::cout <<  "Stack not empty" << std::endl;
+		std::cout <<  "Cleaning..." << std::endl;
+		
+		Link *oldHead;
+
+		while (head != 0)
+		{
+			oldHead = head;
+			head = head->next;
+			
+			delete oldHead;
+		}
 	}
 } ///:~
