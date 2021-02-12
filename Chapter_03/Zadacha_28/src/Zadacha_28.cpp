@@ -9,29 +9,26 @@
 #include <iostream>
 using namespace std;
 
-#define PRINT(ARR,SIZE)			\
-	cout << #ARR << "[";		\
-	for(int i=0;i<SIZE;i++){	\
-		cout << ARR[i];			\
-		cout << "|";			\
-	}							\
-	cout << "]" << endl;		\
-
-
-
+#define PRINT(ARR ,SIZE)			\
+	cout << #ARR << "[";			\
+	for(int i = 0; i < SIZE; i++){	\
+		cout << ARR[i];				\
+		cout << "|";				\
+	}								\
+	cout << "]" << endl;			\
 
 int main() {
-	int SIZE = 6;
-	double arr [SIZE]{0};
-	PRINT(arr,SIZE);
+	const int SIZE = 6;
+
+	double arr[SIZE]{0};
+	PRINT(arr, SIZE);
 
 	unsigned char* chptrArr = reinterpret_cast<unsigned char*>(arr);
-	for(int i=0;i < sizeof(double)*SIZE;i++){
+	for(int i = 0; i < sizeof(double) * SIZE; i++){
 		chptrArr[i] = 1;
 	}
 
-	PRINT(arr,SIZE);
-
+	PRINT(arr, SIZE);
 
 	return 0;
 }
