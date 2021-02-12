@@ -14,27 +14,27 @@ int main() {
 	char input;
 	bool quit = false;
 
-	while(true){
+	while(true) {
 
 		cout << "Main Menu" << endl ;
 		cout << "l: left, r: right, q: quit ->" << endl ;
 		cin >> input;
 
-		switch(input){
+		switch(input) {
 			
 			case 'l':
 				cout  << "Left Menu" << endl;
 				cout << "select a or b:" << endl;
 				cin >> input;
 
-				switch(input){
+				switch(input) {
 					
 					case 'a':
 						cout << "you chose a"<< endl;;
 					break;
 
 					case 'b':
-						cout << "you chose b"<<  endl;
+						cout << "you chose b"<< endl;
 					break;
 
 					default:
@@ -47,14 +47,14 @@ int main() {
 				cout << "select c or d:" << endl;
 				cin >> input;
 
-				switch(input){
+				switch(input) {
 					
 					case 'c':
 						cout << "you chose c"<< endl;;
 					break;
 
 					case 'd':
-						cout << "you chose d"<<  endl;
+						cout << "you chose d"<< endl;
 					break;
 
 					default:
@@ -70,7 +70,7 @@ int main() {
 				cout << "You did not chose a correct option" << endl;
 		}
  
-		if(quit){
+		if(quit) {
 			break;
 		}
 		
