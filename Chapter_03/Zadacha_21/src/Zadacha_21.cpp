@@ -12,10 +12,10 @@ using namespace std;
 
 const int SIZE = 5;
 
-#define PRINT_ARR(ARR)			\
-for(int i=0;i<SIZE;i++) {		\
- 	cout << ARR[i] << endl;		\
-}								\
+#define PRINT_ARR(ARR)				\
+for(int i = 0; i < SIZE; i++) {		\
+ 	cout << ARR[i] << endl;			\
+}									\
 
 
 int main() {
