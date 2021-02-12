@@ -9,9 +9,9 @@
 #include <iostream>
 using namespace std;
 
-typedef float (*ptr_func) (char);
+typedef float (*ptr_func)(char);
 
-float float_func(char ch){
+float float_func(char ch) {
 
 	cout << 3.14f;
 
@@ -19,8 +19,8 @@ float float_func(char ch){
 }
 
 
-ptr_func int_func(int n){
-	float (*ptr_func) (char);
+ptr_func int_func(int n) {
+	float (*ptr_func)(char);
     ptr_func = float_func;
 
     return ptr_func;
@@ -30,11 +30,11 @@ ptr_func int_func(int n){
 
 int main() {
 
-	ptr_func (*ptr) (int);
+	ptr_func (*ptr)(int);
 
 	ptr = int_func;
 
-	cout <<  (*ptr(3)) ('b') << endl;
+	cout <<  (*ptr(3))('b') << endl;
 
 	return 0;
 }
