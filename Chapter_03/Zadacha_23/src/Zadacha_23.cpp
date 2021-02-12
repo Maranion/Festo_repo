@@ -22,9 +22,9 @@ union Primitives {
 
 
 int main() {
-
-	Primitives p[10];
-
+	const int SIZE = 10;
+	
+	Primitives p[SIZE];
 	Primitives* pp = p;
 
 	cout << "sizeof(Primitives) = " << sizeof(Primitives) << endl;
@@ -33,4 +33,5 @@ int main() {
 	pp++;
 	cout << "pp = " << (long)pp << endl;
 
+	return 0;
 } ///:~
