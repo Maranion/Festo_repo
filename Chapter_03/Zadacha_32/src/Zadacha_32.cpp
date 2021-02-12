@@ -9,15 +9,18 @@
 #include <iostream>
 using namespace std;
 
-int func(double n){
+typedef int (*p_Func)(double n);
+
+int func(double n) {
 	return n*2;
 }
 
 int main() {
-	
-	int (*ptr)(double) = func;
+	const int PI = 3.14;
 
-	cout << (*ptr)(3.14);
+	p_Func ptr = func;
+
+	cout << ptr(PI);
 
 	return 0;
 }
