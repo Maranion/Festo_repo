@@ -9,15 +9,14 @@
 #include <iostream>
 using namespace std;
 
-#define PRINT(EXP)					\
-{									\
+#define PRINT(EXP) {				\
 cout << "A = "  << #EXP << endl;	\
 cout << "A = " << EXP << endl;		\
 }									\
 
 int main() {
 
-	int x=1,y=2,z=3;
+	int x=1, y=2, z=3;
 
 	PRINT(x + y - 2/2 + z);
 	PRINT(x + (y - 2) / (2 + z));
