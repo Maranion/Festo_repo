@@ -5,9 +5,7 @@
 #include <iostream>
 using namespace std;
 
-
-typedef struct
-{
+typedef struct {
 	int i, j, k;
 
 } ThreeDpoint;
@@ -18,12 +16,12 @@ typedef struct
 		cout << "&arr[" << i << "] = " << (long)&ARR[i] << endl;	\
 	}																\
 
-int main()
-{
+int main() {
+	const int SIZE = 10;
 
-	ThreeDpoint p[10];
+	ThreeDpoint p[SIZE];
 
-	PRINT(ThreeDpoint,p);
+	PRINT(ThreeDpoint, p);
 
 	return 0;
 
