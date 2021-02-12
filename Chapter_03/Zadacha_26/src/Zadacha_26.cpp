@@ -9,41 +9,38 @@
 #include <iostream>
 using namespace std;
 
-#define PRINT(ARR,SIZE)				\
-	cout << #ARR << "[";			\
-	for(int i=0;i<SIZE;i++){		\
-		cout << ARR[i];				\
-}									\
-cout << "]" << endl;				\
+#define PRINT(ARR, SIZE)				\
+	cout << #ARR << "[";				\
+	for(int i = 0; i < SIZE; i++){		\
+		cout << " " << ARR[i];			\
+	}									\
+	cout << "]" << endl;				\
 
 
-void byte(void *vptr,int range,int value){
+void byte(void *v_ptr, int range, int value) {
 
-	int *iptr;
-	iptr = static_cast<int*>(vptr);
+	char *ch_ptr = static_cast<char*>(v_ptr);
 
-	for(int i=0;i<range;i++){
-		iptr[i] = value;
+	for(int i = 0; i < range; i++) {
+		ch_ptr[i] = value;
 	}
 
-
+	PRINT(ch_ptr, range);
 }
 
 int main() {
 
-
-	int SIZE = 6;
-	int val = 7;
-
+	const int SIZE = 6;
+	const int VALUE = 7;
+	const int B_RANGE = 12;
 
 	int arr[SIZE]{0};
-	PRINT(arr,SIZE);
+	PRINT(arr, SIZE);
 
 	void *pArr = static_cast<void*>(arr);
-	byte(pArr,SIZE,val);
+	byte(pArr, B_RANGE, VALUE);
 
-	PRINT(arr,SIZE);
-
-
+	PRINT(arr, SIZE);
+	
 	return 0;
 }
