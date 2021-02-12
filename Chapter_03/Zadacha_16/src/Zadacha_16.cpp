@@ -22,10 +22,10 @@ enum Colors {
 
 int main() {
 
-	string colorNames[Colors::COUNT] = {"Black","Pink","Red","Blue","Green","Brown","White"};
-	Colors colors[Colors::COUNT] = {BLACK,PINK,RED,BLUE,GREEN,BROWN,WHITE};
+	string colorNames[Colors::COUNT] = {"Black", "Pink", "Red", "Blue", "Green", "Brown", "White"};
+	Colors colors[Colors::COUNT] = {BLACK, PINK, RED, BLUE,  GREEN, BROWN, WHITE};
 
-	for(int i=0;i< Colors::COUNT;i++){
+	for(int i=0; i < Colors::COUNT; i++) {
 		cout << colorNames[i] << " == " << colors[i] << endl;
 	}
 
