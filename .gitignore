@@ -4,3 +4,5 @@ Debug
 .settings
 .vscode
 .exe
+*.exe
+tempCodeRunnerFile.cpp
