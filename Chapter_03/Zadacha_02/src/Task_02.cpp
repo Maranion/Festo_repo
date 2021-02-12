@@ -26,7 +26,7 @@ int main() {
 			}
 		}
 
-		if (primeCheck){
+		if (primeCheck) {
 			cout << i << " ";
 		}
 			
